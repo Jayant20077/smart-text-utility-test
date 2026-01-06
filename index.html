@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Text Utility</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🧠 Smart Text Utility</h1>
+    <p class="subtitle">
+      Analyze, clean, and transform your text instantly.
+    </p>
+
+    <!-- TEXT INPUT -->
+    <section>
+      <h2>Enter Your Text</h2>
+      <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+    </section>
+
+    <!-- LIVE STATS -->
+    <section class="stats">
+      <h2>Live Text Statistics</h2>
+      <p>Characters: <span id="charCount">0</span></p>
+      <p>Words: <span id="wordCount">0</span></p>
+      <p>Sentences: <span id="sentenceCount">0</span></p>
+      <p>Estimated Reading Time: <span id="readTime">0</span> min</p>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="tools">
+      <h2>Text Tools</h2>
+      <div class="buttons">
+        <button onclick="toUpperCaseText()">UPPERCASE</button>
+        <button onclick="toLowerCaseText()">lowercase</button>
+        <button onclick="removeExtraSpaces()">Remove Extra Spaces</button>
+        <button onclick="copyText()">Copy Text</button>
+        <button onclick="clearText()">Clear Text</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Built with HTML, CSS & JavaScript — learning project 🚀
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
